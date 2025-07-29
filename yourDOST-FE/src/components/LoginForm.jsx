@@ -2,10 +2,10 @@ import { Logo } from "./Logo";
 
 export function LoginForm() {
   return (
-    <div className="h-screen flex items-center justify-center px-5 bg-gradient-to-br from-blue-50 via-pink-50 to-indigo-100 bg-[url('data:image/svg+xml;utf8,<svg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'><circle cx=\'1\' cy=\'1\' r=\'1\' fill=\'%23c7d2fe\'/></svg>')]">
-      <div className="shadow-2xl rounded-xl flex ">
+    <div className="min-h-screen flex items-center justify-center px-4 py-10 bg-gradient-to-br from-blue-50 via-pink-50 to-indigo-100 bg-[url('data:image/svg+xml;utf8,<svg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'><circle cx=\'1\' cy=\'1\' r=\'1\' fill=\'%23c7d2fe\'/></svg>')]">
+      <div className="w-full max-w-5xl shadow-2xl rounded-xl flex flex-col md:flex-row bg-white overflow-hidden">
         {/* Left Section */}
-        <div className="hidden md:flex md:w-1/2 bg-blue-100 items-center justify-center p-10 rounded-xl">
+        <div className="hidden md:flex md:w-1/2 bg-blue-100 items-center justify-center p-10">
           <div className="max-w-md text-center">
             <div className="flex justify-center mb-6">
               <Logo />
@@ -13,14 +13,15 @@ export function LoginForm() {
             <h2 className="text-3xl font-bold text-blue-900 mb-4">
               Welcome Back!
             </h2>
-            <p className="text-blue-800 text-sm fright">
+            <p className="text-blue-800 text-sm">
               Access expert guidance, talk to professionals, and take control of
               your mental well-being.
             </p>
           </div>
         </div>
+
         {/* Right Section */}
-        <div className="w-full md:w-1/2  flex items-center justify-center p-8 bg-white rounded-xl">
+        <div className="w-full md:w-1/2 flex items-center justify-center px-6 py-10 sm:px-8">
           <div className="w-full max-w-sm">
             <h2 className="text-2xl font-semibold text-center mb-6 text-gray-900">
               Login to Your Account
@@ -38,7 +39,7 @@ export function LoginForm() {
                   type="email"
                   name="email"
                   placeholder="you@example.com"
-                  className="px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                  className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                 />
               </div>
               <div className="grid gap-2">
@@ -53,7 +54,7 @@ export function LoginForm() {
                   type="password"
                   name="password"
                   placeholder="••••••••"
-                  className="px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                  className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                 />
               </div>
               <button
