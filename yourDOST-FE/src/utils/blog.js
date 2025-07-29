@@ -66,7 +66,7 @@ export const blogs = [
       "Practical and emotional techniques to stay calm and perform well.",
     content: `Exam stress can feel overwhelming, especially when combined with unrealistic expectations. Preparation is the first step — create a revision timetable and stick to it. Divide subjects into small chunks and review regularly. Practice with mock exams to build confidence. Don't underestimate the power of good nutrition, sleep, and hydration during exams. Mindfulness techniques like deep breathing, stretching, or short meditations can ease anxiety. Avoid comparing your progress with peers as it often leads to self-doubt. Parents and teachers should offer reassurance and not add pressure. Remember, exams are important, but they do not define your worth.`,
     image:
-      "https://images.unsplash.com/photo-1615811326818-6e4c4dc8033b?auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=800&q=80",
     author: "Dr. Faisal Khan",
     date: "2025-06-28",
     category: "Exam Support",

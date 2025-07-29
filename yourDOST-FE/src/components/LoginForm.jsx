@@ -23,6 +23,9 @@ export function LoginForm() {
         {/* Right Section */}
         <div className="w-full md:w-1/2 flex items-center justify-center px-6 py-10 sm:px-8">
           <div className="w-full max-w-sm">
+            <div className="md:hidden flex justify-center my-5">
+              <Logo />
+            </div>
             <h2 className="text-2xl font-semibold text-center mb-6 text-gray-900">
               Login to Your Account
             </h2>
