@@ -199,4 +199,14 @@ export const experts = [
     image: "https://randomuser.me/api/portraits/men/27.jpg",
     bio: "Empowers clients to build confidence and resilience.",
   },
+  {
+    id: 21,
+    name: "Ms. Nitish Sharma",
+    designation: "Mental Health Therapist",
+    rating: 4.5,
+    experience: 3,
+    sessions: 890,
+    image: "https://randomuser.me/api/portraits/men/33.jpg",
+    bio: "Focuses on cognitive behavioral therapy and self-esteem.",
+  },
 ];

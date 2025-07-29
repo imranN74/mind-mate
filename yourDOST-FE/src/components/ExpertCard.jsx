@@ -12,7 +12,7 @@ export function ExpertCard({
 }) {
   return (
     <div
-      className="bg-white shadow-md rounded-2xl p-6 w-full max-w-sm text-center flex flex-col items-center gap-4 border border-gray-100"
+      className="bg-white shadow-2xl rounded-2xl p-6 w-full max-w-sm text-center flex flex-col items-center gap-4 border border-gray-100"
       key={id}
     >
       {/* Avatar */}

@@ -22,23 +22,18 @@ export function Navbar() {
               Home
             </a>
             <a
-              href="experts"
+              href="/experts"
               className="text-gray-700 hover:text-indigo-600 font-medium"
             >
               Experts
             </a>
             <a
-              href="#blog"
+              href="/blogs"
               className="text-gray-700 hover:text-indigo-600 font-medium"
             >
-              Blog
+              Blogs
             </a>
-            <a
-              href="#selftest"
-              className="text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Self Test
-            </a>
+
             <a
               href="/login"
               className="text-gray-700 hover:text-indigo-600 font-medium"
@@ -98,22 +93,16 @@ export function Navbar() {
             Home
           </a>
           <a
-            href="#experts"
+            href="/experts"
             className="block py-2 text-gray-700 hover:text-indigo-600 font-medium"
           >
             Experts
           </a>
           <a
-            href="#blog"
+            href="blogs"
             className="block py-2 text-gray-700 hover:text-indigo-600 font-medium"
           >
-            Blog
-          </a>
-          <a
-            href="#selftest"
-            className="block py-2 text-gray-700 hover:text-indigo-600 font-medium"
-          >
-            Self Test
+            Blogs
           </a>
           <a
             href="/login"
