@@ -418,7 +418,7 @@ export function ExpertRegistrationForm() {
 
                   <div className="grid gap-8 md:grid-cols-2">
                     {/* Available Days */}
-                    <div className="bg-green-50 border-2 border-green-100 rounded-xl p-6 shadow-sm">
+                    <div className="bg-green-50 border-2 border-green-100 rounded-xl p-2 shadow-sm">
                       <div className="mb-4">
                         <label className="flex items-center gap-2 text-lg font-semibold text-gray-900 mb-4">
                           <span className="text-green-600">📅</span>
@@ -426,7 +426,7 @@ export function ExpertRegistrationForm() {
                           <span className="text-red-500">*</span>
                         </label>
                       </div>
-                      <div className="flex gap-3 items-center">
+                      <div className="flex gap-1 items-center">
                         <div className="flex-1">
                           <label className="block text-sm font-medium text-gray-700 mb-2">
                             From
@@ -478,7 +478,7 @@ export function ExpertRegistrationForm() {
                     </div>
 
                     {/* Available Time */}
-                    <div className="bg-purple-50 border-2 border-purple-100 rounded-xl p-6 shadow-sm">
+                    <div className="bg-purple-50 border-2 border-purple-100 rounded-xl p-2 shadow-sm sm:flex sm:flex-col">
                       <div className="mb-4">
                         <label className="flex items-center gap-2 text-lg font-semibold text-gray-900 mb-4">
                           <span className="text-purple-600">🕒</span>
@@ -486,7 +486,7 @@ export function ExpertRegistrationForm() {
                           <span className="text-red-500">*</span>
                         </label>
                       </div>
-                      <div className="flex gap-3 items-end">
+                      <div className="flex flex-col sm:flex-row gap-4 sm:gap-1 items-start sm:items-end">
                         {/* From Time */}
                         <div className="flex gap-2 items-end">
                           <div>
@@ -514,11 +514,14 @@ export function ExpertRegistrationForm() {
                             <option value="PM">PM</option>
                           </select>
                         </div>
-                        <div className="flex items-center justify-center pb-2">
+
+                        {/* Arrow */}
+                        <div className="hidden md:flex items-center justify-center pb-2 sm:pb-0">
                           <span className="text-gray-400 text-xl font-bold">
                             →
                           </span>
                         </div>
+
                         {/* To Time */}
                         <div className="flex gap-2 items-end">
                           <div>
@@ -547,6 +550,7 @@ export function ExpertRegistrationForm() {
                           </select>
                         </div>
                       </div>
+
                       <div className="mt-4 bg-white p-3 rounded-lg border border-purple-200">
                         <p className="text-xs text-gray-600">
                           ⏰ Set a time range you're available each day (e.g., 9
@@ -728,7 +732,7 @@ export function ExpertRegistrationForm() {
                 )}
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-1 md:gap-4">
                 <span className="text-sm text-gray-500 font-medium">
                   Step {step + 1} of {steps.length}
                 </span>
