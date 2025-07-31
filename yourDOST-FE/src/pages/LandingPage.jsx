@@ -1,8 +1,11 @@
 import { Logo } from "../components/Logo";
 import CountUp from "react-countup";
 import { Users, UserCheck, MessageCircle, Award } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function LandingPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-gradient-to-br from-blue-50 to-pink-50 min-h-screen flex flex-col">
       {/* Hero Section */}
@@ -360,14 +363,15 @@ export function LandingPage() {
 
           {/* Call to Action */}
           <div className="mt-12">
-            <button className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300">
+            <button
+              onClick={() => navigate("/expert-registeration")}
+              className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
+            >
               BECOME AN EXPERT
             </button>
           </div>
         </div>
       </section>
-
-      <section></section>
 
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-white">

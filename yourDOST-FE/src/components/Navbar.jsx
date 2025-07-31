@@ -5,7 +5,7 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow sticky top-0 z-50">
+    <nav className="bg-indigo-50 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -15,34 +15,22 @@ export function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
-            <a
-              href="/"
-              className="text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Home
-            </a>
-            <a
-              href="/experts"
-              className="text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Experts
-            </a>
-            <a
-              href="/blogs"
-              className="text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Blogs
-            </a>
+            {["Home", "Experts", "Blogs", "Login"].map((item, index) => (
+              <a
+                key={index}
+                href={`/${
+                  item.toLowerCase() === "home" ? "" : item.toLowerCase()
+                }`}
+                className="relative group text-gray-700 hover:text-indigo-600 font-medium transition duration-200"
+              >
+                {item}
+                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-500 transition-all group-hover:w-full duration-300"></span>
+              </a>
+            ))}
 
             <a
-              href="/login"
-              className="text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Login
-            </a>
-            <a
               href="/signup"
-              className="ml-2 px-4 py-2 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition"
+              className="ml-2 px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full font-semibold shadow hover:brightness-110 transition duration-200"
             >
               Sign Up
             </a>
@@ -85,34 +73,21 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow px-4 pb-4">
-          <a
-            href="/"
-            className="block py-2 text-gray-700 hover:text-indigo-600 font-medium"
-          >
-            Home
-          </a>
-          <a
-            href="/experts"
-            className="block py-2 text-gray-700 hover:text-indigo-600 font-medium"
-          >
-            Experts
-          </a>
-          <a
-            href="blogs"
-            className="block py-2 text-gray-700 hover:text-indigo-600 font-medium"
-          >
-            Blogs
-          </a>
-          <a
-            href="/login"
-            className="block py-2 text-gray-700 hover:text-indigo-600 font-medium"
-          >
-            Login
-          </a>
+        <div className="md:hidden bg-white shadow px-4 pb-4 transition-all duration-300 animate-slide-down">
+          {["Home", "Experts", "Blogs", "Login"].map((item, index) => (
+            <a
+              key={index}
+              href={`/${
+                item.toLowerCase() === "home" ? "" : item.toLowerCase()
+              }`}
+              className="block py-2 text-gray-700 hover:text-indigo-600 font-medium transition"
+            >
+              {item}
+            </a>
+          ))}
           <a
             href="/signup"
-            className="block py-2 mt-2 bg-indigo-600 text-white rounded-lg font-semibold text-center hover:bg-indigo-700 transition"
+            className="block py-2 mt-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-center rounded-full font-semibold hover:brightness-110 transition duration-200"
           >
             Sign Up
           </a>
