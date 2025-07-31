@@ -4,18 +4,44 @@ export function SignupForm() {
   return (
     <div className="min-h-[calc(100vh-64px)] w-full flex">
       {/* Left Side */}
-      <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-blue-200 via-purple-100 to-pink-200 items-center justify-center px-10">
-        <div className="text-center">
-          <div className="flex justify-center mb-6">
-            <Logo />
+      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 items-center justify-center px-10 relative overflow-hidden">
+        {/* Floating decorative elements */}
+        <div className="absolute top-20 left-20 w-32 h-32 bg-white/10 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-32 right-16 w-24 h-24 bg-white/20 rounded-full blur-lg animate-bounce"></div>
+        <div className="absolute top-1/2 left-10 w-16 h-16 bg-yellow-300/30 rounded-full blur-md"></div>
+
+        <div className="text-center relative z-10">
+          <div className="flex justify-center mb-8 transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 shadow-2xl">
+              <Logo />
+            </div>
           </div>
-          <h2 className="text-4xl font-bold text-indigo-800 mb-4 leading-tight drop-shadow">
-            Join Our Community!
+          <h2 className="text-5xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+            Welcome to
+            <span className="block bg-gradient-to-r from-yellow-300 to-pink-300 bg-clip-text text-transparent">
+              MindMate
+            </span>
           </h2>
-          <p className="text-indigo-700 text-lg max-w-sm mx-auto">
-            Create your account to access expert guidance, connect with
-            professionals, and start your journey to better mental well-being.
+          <p className="text-white/90 text-xl max-w-md mx-auto leading-relaxed font-light">
+            Your mental wellness companion. Connect with experts, explore
+            resources, and thrive emotionally.
           </p>
+
+          {/* Feature highlights */}
+          <div className="mt-5 space-y-4">
+            <div className="flex items-center justify-center gap-3 text-white/80">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span className="text-sm">24/7 Expert Support</span>
+            </div>
+            <div className="flex items-center justify-center gap-3 text-white/80">
+              <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+              <span className="text-sm">Personalized Wellness Plans</span>
+            </div>
+            <div className="flex items-center justify-center gap-3 text-white/80">
+              <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
+              <span className="text-sm">Secure & Private</span>
+            </div>
+          </div>
         </div>
       </div>
 
