@@ -1,13 +1,10 @@
-const categories = [
-  "All",
-  "Love & Relationships",
-  "Mental Wellness",
-  "Self Help",
-  "Career Guidance",
-  "Academic Stress",
-  "Anxiety & Depression",
-  "Time Management",
-];
+import { experts } from "../utils/data";
+
+// Extract unique specializations
+const specializations = Array.from(
+  new Set(experts.flatMap((e) => e.specializations))
+);
+const categories = ["All", ...specializations];
 
 export function Category({ selected, onSelect }) {
   return (

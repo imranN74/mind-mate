@@ -1,32 +1,41 @@
+import { useState } from "react";
 import { ExpertCard } from "../components/ExpertCard";
 import { experts } from "../utils/data";
 import { Category } from "../components/Category";
 
 export function ExpertPage() {
+  const [selectedCategory, setSelectedCategory] = useState("");
+
+  // Filter experts by selected specialization
+  const filteredExperts =
+    selectedCategory === ""
+      ? experts
+      : experts.filter((expert) =>
+          expert.specializations?.includes(selectedCategory)
+        );
+
   return (
     <div>
       {/* Category Filter */}
-      <div className="">
-        <Category />
+      <div>
+        <Category selected={selectedCategory} onSelect={setSelectedCategory} />
       </div>
 
       {/* Expert Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 mx-5 my-5">
-        {experts.map((data) => {
-          return (
-            <ExpertCard
-              key={data.id}
-              id={data.id}
-              name={data.name}
-              designation={data.designation}
-              rating={data.rating}
-              experience={data.experience}
-              sessions={data.sessions}
-              image={data.image}
-              bio={data.bio}
-            />
-          );
-        })}
+        {filteredExperts.map((data) => (
+          <ExpertCard
+            key={data.id}
+            id={data.id}
+            name={data.name}
+            designation={data.designation}
+            rating={data.rating}
+            experience={data.experience}
+            sessions={data.sessions}
+            image={data.image}
+            bio={data.bio}
+          />
+        ))}
       </div>
 
       {/* Informative Section */}

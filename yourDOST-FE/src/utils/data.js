@@ -8,6 +8,7 @@ export const experts = [
     sessions: 1200,
     image: "https://randomuser.me/api/portraits/women/44.jpg",
     bio: "Specializes in anxiety, depression, and relationship counseling.",
+    specializations: ["Anxiety", "Depression", "Relationships"],
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const experts = [
     sessions: 980,
     image: "https://randomuser.me/api/portraits/men/65.jpg",
     bio: "Expert in stress management and academic pressure.",
+    specializations: ["Stress", "Academics"],
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const experts = [
     sessions: 1100,
     image: "https://randomuser.me/api/portraits/women/32.jpg",
     bio: "Helps children and teens with emotional challenges.",
+    specializations: ["Child Therapy", "Teen Counseling"],
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export const experts = [
     sessions: 870,
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     bio: "Focuses on cognitive behavioral therapy and self-esteem.",
+    specializations: ["CBT", "Self-Esteem"],
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ export const experts = [
     sessions: 1450,
     image: "https://randomuser.me/api/portraits/women/65.jpg",
     bio: "Medical doctor with expertise in mood disorders.",
+    specializations: ["Mood Disorders", "Medication"],
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ export const experts = [
     sessions: 560,
     image: "https://randomuser.me/api/portraits/men/76.jpg",
     bio: "Guides young adults on career direction and motivation.",
+    specializations: ["Career", "Motivation"],
   },
   {
     id: 7,
@@ -68,6 +74,7 @@ export const experts = [
     sessions: 1300,
     image: "https://randomuser.me/api/portraits/women/47.jpg",
     bio: "Works with clients struggling with behavioral issues and trauma.",
+    specializations: ["Behavioral Issues", "Trauma"],
   },
   {
     id: 8,
@@ -78,6 +85,7 @@ export const experts = [
     sessions: 940,
     image: "https://randomuser.me/api/portraits/men/19.jpg",
     bio: "Specializes in hypnotherapy and inner child healing.",
+    specializations: ["Hypnotherapy", "Inner Child Healing"],
   },
   {
     id: 9,
@@ -88,6 +96,7 @@ export const experts = [
     sessions: 1220,
     image: "https://randomuser.me/api/portraits/women/55.jpg",
     bio: "Supportive and affirming therapy for LGBTQ+ individuals.",
+    specializations: ["LGBTQ+", "Affirmative Therapy"],
   },
   {
     id: 10,
@@ -98,6 +107,7 @@ export const experts = [
     sessions: 780,
     image: "https://randomuser.me/api/portraits/men/22.jpg",
     bio: "Helps overcome substance abuse and dependency issues.",
+    specializations: ["Addiction", "Substance Abuse"],
   },
   {
     id: 11,
@@ -108,6 +118,7 @@ export const experts = [
     sessions: 1280,
     image: "https://randomuser.me/api/portraits/women/75.jpg",
     bio: "Expert in couple’s therapy and relationship dynamics.",
+    specializations: ["Marriage", "Relationships"],
   },
   {
     id: 12,
@@ -118,6 +129,7 @@ export const experts = [
     sessions: 1020,
     image: "https://randomuser.me/api/portraits/men/81.jpg",
     bio: "Guides clients through life transitions and emotional health.",
+    specializations: ["Life Transitions", "Emotional Health"],
   },
   {
     id: 13,
@@ -128,6 +140,7 @@ export const experts = [
     sessions: 1160,
     image: "https://randomuser.me/api/portraits/women/41.jpg",
     bio: "Helps teenagers cope with identity and social pressures.",
+    specializations: ["Teen Counseling", "Identity Issues"],
   },
   {
     id: 14,
@@ -138,6 +151,7 @@ export const experts = [
     sessions: 620,
     image: "https://randomuser.me/api/portraits/men/55.jpg",
     bio: "Focuses on mindfulness, balance, and lifestyle therapy.",
+    specializations: ["Mindfulness", "Lifestyle", "Balance"],
   },
   {
     id: 15,
@@ -148,6 +162,7 @@ export const experts = [
     sessions: 790,
     image: "https://randomuser.me/api/portraits/women/20.jpg",
     bio: "Teaches mindfulness and meditation to manage stress.",
+    specializations: ["Mindfulness", "Stress", "Meditation"],
   },
   {
     id: 16,
@@ -158,6 +173,7 @@ export const experts = [
     sessions: 1500,
     image: "https://randomuser.me/api/portraits/men/39.jpg",
     bio: "Deals with brain-behavior connections and trauma recovery.",
+    specializations: ["Neuropsychology", "Trauma"],
   },
   {
     id: 17,
@@ -168,6 +184,7 @@ export const experts = [
     sessions: 880,
     image: "https://randomuser.me/api/portraits/women/62.jpg",
     bio: "Supports clients processing loss and emotional healing.",
+    specializations: ["Grief", "Loss", "Healing"],
   },
   {
     id: 18,
@@ -178,6 +195,7 @@ export const experts = [
     sessions: 990,
     image: "https://randomuser.me/api/portraits/men/48.jpg",
     bio: "Helps individuals overcome chronic depression and anxiety.",
+    specializations: ["Depression", "Anxiety"],
   },
   {
     id: 19,
@@ -188,6 +206,7 @@ export const experts = [
     sessions: 1350,
     image: "https://randomuser.me/api/portraits/women/29.jpg",
     bio: "Blends mental health practices with yoga and Ayurveda.",
+    specializations: ["Holistic", "Ayurveda", "Yoga"],
   },
   {
     id: 20,
@@ -198,6 +217,7 @@ export const experts = [
     sessions: 720,
     image: "https://randomuser.me/api/portraits/men/27.jpg",
     bio: "Empowers clients to build confidence and resilience.",
+    specializations: ["Self-Esteem", "Confidence", "Resilience"],
   },
   {
     id: 21,
@@ -208,5 +228,6 @@ export const experts = [
     sessions: 890,
     image: "https://randomuser.me/api/portraits/men/33.jpg",
     bio: "Focuses on cognitive behavioral therapy and self-esteem.",
+    specializations: ["CBT", "Self-Esteem"],
   },
 ];
