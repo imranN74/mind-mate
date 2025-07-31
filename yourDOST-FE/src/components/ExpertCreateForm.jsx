@@ -701,11 +701,16 @@ export function ExpertRegistrationForm() {
                       <div className="p-6">
                         <div className="flex items-center justify-center">
                           <div className="text-center space-y-3">
-                            <div className="inline-flex items-center px-4 py-2 rounded-full text-lg font-medium bg-purple-100 text-purple-800 border-2 border-purple-200">
-                              <strong>Availability:</strong> {formData.fromDay}{" "}
-                              to {formData.toDay}, {formData.fromHour}{" "}
-                              {formData.fromPeriod} - {formData.toHour}{" "}
-                              {formData.toPeriod}
+                            <div className="items-center px-4 py-2 rounded-full text-lg font-medium bg-purple-100 text-purple-800 border-2 border-purple-200">
+                              <div>Availability :</div>
+                              <div>
+                                {formData.fromDay} to {formData.toDay},
+                              </div>
+                              <div>
+                                {formData.fromHour} {formData.fromPeriod}
+                                <span className="px-1">-</span>
+                                {formData.toHour} {formData.toPeriod}
+                              </div>
                             </div>
                           </div>
                         </div>

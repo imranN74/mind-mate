@@ -382,7 +382,7 @@ export function LandingPage() {
           {/* Call to Action */}
           <div className="mt-16">
             <button
-              onClick={() => router.push("/expert-registeration")}
+              onClick={() => navigate("/expert-registeration")}
               className="px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold text-lg shadow-xl hover:shadow-2xl hover:brightness-110 active:scale-[0.98] transition-all duration-300 ease-in-out transform focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
             >
               BECOME AN EXPERT
