@@ -335,7 +335,7 @@ export function ExpertRegistrationForm() {
                           name="designation"
                           value={formData.designation}
                           onChange={handleChange}
-                          placeholder="e.g., Senior Consultant, Lead Developer"
+                          placeholder="e.g. Psychologist, Counselor, etc."
                           className="w-full h-12 px-4 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none transition-colors duration-200 bg-white"
                         />
                       </div>
@@ -377,7 +377,7 @@ export function ExpertRegistrationForm() {
                           name="education"
                           value={formData.education}
                           onChange={handleChange}
-                          placeholder="e.g., MBA, PhD in Computer Science"
+                          placeholder="e.g., MBBS, DNB (Psychiatry)"
                           className="w-full h-12 px-4 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none transition-colors duration-200 bg-white"
                         />
                       </div>
